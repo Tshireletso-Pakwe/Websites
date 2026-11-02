@@ -142,3 +142,94 @@ if (contactForm) {
 ;
 
 }
+
+//                     PRODUCT SEARCH AND FILTER
+
+const productSearch = document.getElementById("productSearch");
+const categoryFilter = document.getElementById("categoryFilter");
+
+if (productSearch && categoryFilter) {
+
+    // Find all product sections
+    
+    const productSections = document.querySelectorAll(".product-section");
+
+    const productFeedback = document.getElementById("productFeedback");
+
+    // Search and filter products
+    
+    function filterProducts() {
+
+        const searchValue = productSearch.value.toLowerCase().trim();
+        const selectedCategory = categoryFilter.value;
+
+        let visibleProducts = 0;
+
+        productSections.forEach(function(section) {
+
+            const heading = section.querySelector("h2");
+
+            const category = heading.textContent.toLowerCase();
+
+            const products = section.querySelectorAll(".product-card");
+
+            let visibleInSection = 0;
+
+            products.forEach(function(product) {
+
+                const productName = product.querySelector("h3").textContent.toLowerCase();
+
+                const productDescription = product.querySelector("p").textContent.toLowerCase();
+
+                const matchesSearch =
+                    productName.includes(searchValue) ||
+                    productDescription.includes(searchValue);
+
+                const matchesCategory =
+                    selectedCategory === "all" ||
+                    category.includes(selectedCategory);
+
+                if (matchesSearch && matchesCategory) {
+
+                    product.style.display = "";
+                    visibleInSection++;
+                    visibleProducts++;
+
+                } else {
+
+                    product.style.display = "none";
+
+                }
+
+            });
+
+            // Hide categories without matching products
+            
+            section.style.display = visibleInSection > 0 ? "" : "none";
+
+        });
+
+        // Display search results
+        
+        if (visibleProducts === 0) {
+
+            productFeedback.textContent = "Sorry, no matching products were found.";
+
+        } else {
+
+            productFeedback.textContent =
+                visibleProducts + " product(s) found.";
+
+        }
+
+    }
+
+    // Search when the customer types
+    
+    productSearch.addEventListener("input", filterProducts);
+
+    // Filter when the customer selects a category
+    
+    categoryFilter.addEventListener("change", filterProducts);
+
+}
