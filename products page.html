@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | Home Baked</title>
 	<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -32,6 +33,31 @@
             </p>
         </section>
 
+     <section class="product-search">
+
+    <h2>Find Your Favourite Treat</h2>
+
+    <label for="productSearch">Search Products:</label>
+
+    <input
+        type="search"
+        id="productSearch"
+        placeholder="Search cakes, cupcakes, bread..."
+    >
+
+    <label for="categoryFilter">Filter by Category:</label>
+
+    <select id="categoryFilter">
+        <option value="all">All Products</option>
+        <option value="cakes">Cakes</option>
+        <option value="cupcakes">Cupcakes</option>
+        <option value="pastries">Pastries</option>
+        <option value="bread">Bread</option>
+    </select>
+
+    <p id="productFeedback" role="status" aria-live="polite"></p>
+
+</section>   
         
         <section class="product-section">
             <h2>Cakes</h2>
@@ -49,6 +75,7 @@
                         src="Cakes aesthetic.jpg"
                         alt="Celebration cake">
 
+             </div>
              </div>
 
     <div class="product-info">
