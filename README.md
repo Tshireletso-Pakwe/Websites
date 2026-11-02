@@ -1,4 +1,4 @@
-# Home Baked Website
+# Home Baked Website Project
 
 1. Introduction
 
@@ -8,7 +8,7 @@ The purpose of this website is to give Home Baked an online presence where custo
 2. Project Goals
 
 The main goals of this website are to:
--Introduce customers to Home Baked.
+- Introduce customers to Home Baked.
 - Provide information about the bakery.
 - Display the bakery's products.
 - Allow customers to make enquiries.
@@ -18,49 +18,56 @@ The main goals of this website are to:
 3. Technologies Used
 
 The following technologies were used to develop the website:
-HTML5: Used to create the structure and content of the website.
-CSS3: Used to design the website and control its appearance.
-JavaScript: Used to add interactive features to the website.
+- HTML5: Used to create the structure and content of the website.
+- CSS3: Used to design the website and control its appearance.
+- JavaScript: Used to add interactive features and improve website functionality.
 
 4. Website Pages
 
 The website consists of five main pages:
-Home Page: Introduces the bakery and provides an overview of its business.
-About Page: Gives customers more information about Home Baked.
-Products Page: Displays the different products offered by the bakery.
-Enquiry Page: Allows customers to send enquiries about the bakery's products and services.
-Contact Page:Provides customers with a way to contact the bakery.
+- Home Page: Introduces the bakery and provides an overview of its business.
+- About Page: Gives customers more information about Home Baked.
+- Products Page: Displays the different products offered by the bakery.
+- Enquiry Page: Allows customers to make enquiries about the bakery's products and services.
+- Contact Page: Provides customers with ways to contact the bakery and view its location.
 
 5. Website Design
 
 The website uses a bakery-inspired design with red, cream, brown and gold colours.
-
 The design aims to make the website attractive, simple to use and easy to navigate. Images are also included to give customers a better idea of the bakery and its products.
 
-6. JavaScript
+6. JavaScript Functionality
 
-JavaScript is included in the project to improve the website's functionality and make it more interactive.
-The JavaScript file is named "script.js". The interactive features added to the website are documented as part of the Part 3 development.
+JavaScript is used to improve the website's functionality and make it more interactive.
+
+The interactive features include:
+- Product searching and category filtering.
+- Product image lightbox.
+- FAQ accordion on the Contact page.
+- Form validation for the enquiry and contact forms.
+- Interactive elements that respond to customer actions.
+
+The JavaScript code is stored in "script.js".
 
 7. Search Engine Optimisation (SEO)
 
-SEO is important because it helps websites become easier to find through search engines.
+SEO improvements were included to help search engines understand the website's content.
 
-The website includes SEO improvements such as:
-- Page titles.
-- Meta descriptions.
-- Relevant keywords.
-- Headings.
-- Image alternative text.
-- Links between website pages.
-- A sitemap and robots.txt file.
+These improvements include:
+1. Page titles.
+2. Meta descriptions.
+3. Relevant keywords.
+4. Heading structure.
+5. Image alternative text.
+6. Internal links between website pages.
+7. A sitemap and robots.txt file.
 
-8. Forms
+8. Forms and Customer Communication
 
-The website includes an enquiry form and a contact page.
+The website includes an enquiry form and a contact form.
 The enquiry form allows customers to ask questions about the bakery's products and services.
-The contact page allows customers to send general messages to the business.
-Form validation is included as part of the website development to help ensure that customers enter the required information.
+The contact form allows customers to send general messages to the business.
+Both forms include JavaScript validation to check that required information is entered correctly. Valid submissions prepare an email using the customer's default email application.
 
 9. Project Files
 
@@ -68,7 +75,7 @@ The project contains the following main files:
 - HTML files for the different website pages.
 - style.css for the website design.
 - script.js for JavaScript functionality.
-- An images folder for website pictures.
+- Image files used throughout the website.
 - sitemap.xml for the website sitemap.
 - robots.txt for search engine instructions.
 - README.md for project information and documentation.
@@ -78,21 +85,43 @@ The project contains the following main files:
 To view the website:
 1. Download the project from GitHub.
 2. Extract the project folder if it is downloaded as a ZIP file.
-3. Open the folder in Visual Studio Code.
-4. Open the `index page.html` file in a web browser.
+3. Open the project folder in Visual Studio Code.
+4. Open `index page.html` in a web browser.
 5. Use the navigation menu to visit the other pages.
 
 11. Changelog
 
-                                    **Part 3 – November 2026**
+                                                          Part 3 – November 2026
 
 The following changes and improvements were made during Part 3:
 - Created a new GitHub repository for the final part of the project.
-- Added a JavaScript file for website functionality.
-- Created a README file to explain the project.
-- Added SEO improvements.
-- Worked with form functionality and website improvements are documented as they are created.
+- Added JavaScript functionality to improve website interaction.
+- Added validation to the enquiry and contact forms.
+- Added product searching and category filtering.
+- Added a lightbox feature for viewing product images.
+- Added an FAQ accordion to the Contact page.
+- Added CSS animations and transitions.
+- Added an interactive Google Maps embed to the Contact page.
+- Improved SEO through page titles, meta descriptions and keywords.
+- Improved image alternative text.
+- Updated website content and page structure.
+- Updated project documentation and README.
+- Committed website development changes to GitHub.
 
 12. References
 
-References for website content, images, development resources and technical information are included in the project's reference documentation.
+The following sources were used for business information and website development:
+  ~Technical References
+* MDN Web Docs (n.d.) *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 2 November 2026).
+* MDN Web Docs (n.d.) *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 2 November 2026).
+* MDN Web Docs (n.d.) *JavaScript*. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 2 November 2026).
+* MDN Web Docs (n.d.) *The HTML form element*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form (Accessed: 2 November 2026).
+* Google Search Central (n.d.) *SEO Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 2 November 2026).
+* Google Search Central (n.d.) *Build and submit a sitemap*. Available at: https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview (Accessed: 2 November 2026).
+* World Wide Web Consortium (W3C) (n.d.) *Markup Validation Service*. Available at: https://validator.w3.org/ (Accessed: 2 November 2026).
+* Google Maps Platform (n.d.) *Google Maps Platform Documentation*. Available at: https://developers.google.com/maps/documentation (Accessed: 2 November 2026).
+* Pinterest (2026) *Pinterest: Image and design inspiration platform*. Available at: https://www.pinterest.com/ (Accessed: 2 November 2026).
+
+
+**Technical references:** Any external HTML, CSS and JavaScript tutorials or documentation consulted during development must be listed here.
+
