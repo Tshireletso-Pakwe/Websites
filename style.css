@@ -1126,3 +1126,84 @@ footer a:hover {
     }
 
 }
+
+/*                          INTERACTIVE ANIMATIONS */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation animations */
+nav a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+}
+
+/* Button animations */
+button,
+.map-button,
+section a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.map-button:hover,
+section a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(90, 48, 32, 0.2);
+}
+
+/* Product card animations */
+.product-card,
+.featured-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover,
+.featured-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(90, 48, 32, 0.18);
+}
+
+/* Product image animations */
+.product-card img,
+.featured-card img {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img,
+.featured-card:hover img {
+    transform: scale(1.04);
+}
+
+/* Form field animations */
+input,
+select,
+textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 6px rgba(169, 20, 28, 0.2);
+}
+
+/* Page loading animation */
+body {
+    animation: pageFadeIn 0.7s ease-in;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
