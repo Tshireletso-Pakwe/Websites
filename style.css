@@ -1127,7 +1127,7 @@ footer a:hover {
 
 }
 
-/*                          INTERACTIVE ANIMATIONS */
+/*INTERACTIVE ANIMATIONS */
 
 /* Smooth scrolling */
 html {
@@ -1206,4 +1206,61 @@ body {
     to {
         opacity: 1;
     }
+}
+
+/* FAQ ACCORDION */
+
+.faq-section {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 30px 20px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #a9141c;
+}
+
+.faq-section > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #ead8bd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 18px;
+    background-color: #fff8eb;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5a3020;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-question:hover {
+    background-color: #f5e8d5;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 18px;
+    background-color: #fffdf8;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question span {
+    transform: rotate(45deg);
 }
