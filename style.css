@@ -1264,3 +1264,65 @@ body {
 .faq-item.active .faq-question span {
     transform: rotate(45deg);
 }
+
+/* CONTACT IMPROVEMENTS */
+
+.location p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5a3020;
+}
+
+.location a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a9141c;
+    text-decoration: none;
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
+
+/* NEW MAP SECTION STYLING */
+
+.map-section {
+    background-color: #fff8eb;
+    padding: 30px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.map-section h2 {
+    color: #a9141c;
+    font-size: 26px;
+}
+
+.map-section p {
+    color: #5a3020;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #d9a441;
+}
+
+.map-button {
+    display: inline-block;
+    background-color: #a9141c;
+    color: #fffdf8;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map-button:hover {
+    background-color: #7f0f15;
+}
