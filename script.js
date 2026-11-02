@@ -67,3 +67,78 @@ enquiryForm.addEventListener("submit", function(event) {
 
 
 }
+
+//               CONTACT FORM VALIDATION
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(event) {
+
+        // Stop the form from submitting immediately
+        
+        event.preventDefault();
+
+        // Collect customer information
+        
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const messageType = document.getElementById("messageType").value;
+        const message = document.getElementById("contactMessage").value.trim();
+
+        // Find the feedback paragraph
+        
+        const feedback = document.getElementById("contactFeedback");
+
+        // Clear previous feedback
+        
+        feedback.textContent = "";
+
+        // Check required fields
+        
+        if (!name || !email || !messageType || !message) {
+
+            feedback.textContent = "Please complete all required fields.";
+            return;
+        }
+
+        // Validate email address
+        
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+
+            feedback.textContent = "Please enter a valid email address.";
+            return;
+        }
+
+        // Prepare email subject
+        
+        const subject = encodeURIComponent("Home Baked - " + messageType);
+
+        // Prepare email body
+        
+        const body = encodeURIComponent(
+            "Customer Name: " + name +
+            "\nEmail Address: " + email +
+            "\nMessage Type: " + messageType +
+            "\n\nCustomer Message:\n" + message
+        );
+
+        // Display confirmation
+        
+        feedback.textContent =
+            "Your message has been prepared. Please send it using your email application.";
+
+        // Open the customer's email application
+        
+        window.location.href =
+            "mailto:homebaked.durban@gmail.com?subject=" +
+            subject + "&body=" + body;
+
+}
+)
+;
+
+}
