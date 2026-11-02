@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make an Enquiry | Home Baked</title>
 	<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 
         <section>
 
-            <form>
+            <form id="enquiryForm" novalidate>
 
                 <label for="fullName">Full Name:</label>
                 <br>
@@ -74,7 +75,7 @@
                 <label for="enquiryType">Enquiry Type:</label>
                 <br>
 
-                <select id="enquiryType" name="enquiryType">
+                <select id="enquiryType" name="enquiryType" required>
 
                     <option value="">Please select</option>
 
@@ -114,7 +115,7 @@
                 <button type="submit">
                     Submit Enquiry
                 </button>
-
+    <p id="enquiryFeedback" role="status" aria-live="polite"></p>
             </form>
 
         </section>
