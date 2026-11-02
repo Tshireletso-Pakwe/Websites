@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Enquiry | Home Baked</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Home Baked</h1>
+
+        <nav>
+            <a href="index page.html">Home</a>
+            <a href="about page.html">About Us</a>
+            <a href="products page.html">Products</a>
+            <a href="enquiry form.html">Enquiry</a>
+            <a href="contact page.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Interested in our products or want to enquire
+                about a custom cake? Complete the form below.
+            </p>
+        </section>
+
+        <section>
+
+            <form>
+
+                <label for="fullName">Full Name:</label>
+                <br>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required
+                >
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <br>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                >
+
+                <br><br>
+
+                <label for="enquiryType">Enquiry Type:</label>
+                <br>
+
+                <select id="enquiryType" name="enquiryType">
+
+                    <option value="">Please select</option>
+
+                    <option value="general">
+                        General Enquiry
+                    </option>
+
+                    <option value="order">
+                        Product Order
+                    </option>
+
+                    <option value="custom-cake">
+                        Custom Cake
+                    </option>
+
+                    <option value="delivery">
+                        Delivery
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label for="message">Enquiry Details:</label>
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    cols="40"
+                    required>
+                </textarea>
+
+                <br><br>
+
+                <button type="submit">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p><center> 2026 Home Baked. All Rights Reserved.</center></p>
+    </footer>
+
+</body>
+</html>
