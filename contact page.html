@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Home Baked</title>
 	<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -116,7 +117,7 @@
         <section>
             <h2>Send Us a Message</h2>
 
-            <form>
+            <form id="contactForm" novalidate>
 
                 <label for="contactName">
                     Full Name:
@@ -148,6 +149,24 @@
 
                 <br><br>
 
+            <label for="messageType">
+        Type of Message:
+    </label>
+
+    <br>
+
+    <select id="messageType" name="messageType" required>
+        <option value="">Please select</option>
+        <option value="General Question">General Question</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <br><br>
+
+
+
                 <label for="contactMessage">
                     Message:
                 </label>
@@ -167,6 +186,7 @@
                 <button type="submit">
                     Send Message
                 </button>
+            <p id="contactFeedback" role="status" aria-live="polite"></p>
 
             </form>
 
