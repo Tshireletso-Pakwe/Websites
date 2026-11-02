@@ -233,3 +233,91 @@ if (productSearch && categoryFilter) {
     categoryFilter.addEventListener("change", filterProducts);
 
 }
+
+//                          IMAGE GALLERY LIGHTBOX
+
+const galleryImages = document.querySelectorAll(".product-card img");
+
+if (galleryImages.length > 0) {
+
+    // Create the lightbox container
+    
+    const lightbox = document.createElement("div");
+
+    lightbox.id = "imageLightbox";
+    lightbox.className = "lightbox";
+
+    lightbox.innerHTML = `
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <img class="lightbox-image" src="" alt="">
+        <p class="lightbox-caption"></p>
+    `;
+
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector(".lightbox-image");
+    const lightboxCaption = lightbox.querySelector(".lightbox-caption");
+    const closeButton = lightbox.querySelector(".lightbox-close");
+
+    // Open the lightbox when an image is clicked
+    
+    galleryImages.forEach(function(image) {
+
+        image.style.cursor = "pointer";
+
+        image.addEventListener("click", function() {
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+
+            lightboxCaption.textContent = image.alt;
+
+            lightbox.classList.add("active");
+
+    }
+    )
+    ;
+
+    }
+    )
+    ;
+
+    // Close the lightbox
+    
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+
+        lightboxImage.src = "";
+
+    }
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    // Close when clicking outside the image
+    
+    lightbox.addEventListener("click", function(event) {
+
+        if (event.target === lightbox) {
+
+            closeLightbox();
+
+        }
+
+    });
+
+    // Close when Escape is pressed
+    
+    document.addEventListener("keydown", function(event) {
+
+        if (event.key === "Escape") {
+
+            closeLightbox();
+
+        }
+
+}
+)
+;
+
+}
