@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Home Baked</title>
-	<link rel="stylesheet" href="style.css">
+
+    <!-- SEO Information -->
+    <title>Our Products | Fresh Cakes, Cupcakes and Pastries | Home Baked</title>
+
+    <meta name="description" content="Explore Home Baked's selection of freshly baked cakes, cupcakes, pastries and bread in Durban North. Enquire about our delicious baked goods and custom orders.">
+
+    <meta name="keywords" content="Home Baked products, cakes Durban North, cupcakes, custom cakes, pastries, croissants, doughnuts, freshly baked bread, Durban bakery">
+
+    <meta name="author" content="Home Baked">
+
+    <!-- Stylesheet and JavaScript -->
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>Home Baked</h1>
 
@@ -24,6 +37,7 @@
 
     <main>
 
+        <!-- PRODUCTS INTRODUCTION -->
         <section>
             <h2>Our Products</h2>
 
@@ -33,345 +47,352 @@
             </p>
         </section>
 
-     <section class="product-search">
+        <!-- PRODUCT SEARCH AND FILTER -->
+        <section class="product-search">
 
-    <h2>Find Your Favourite Treat</h2>
+            <h2>Find Your Favourite Treat</h2>
 
-    <label for="productSearch">Search Products:</label>
+            <label for="productSearch">Search Products:</label>
 
-    <input
-        type="search"
-        id="productSearch"
-        placeholder="Search cakes, cupcakes, bread..."
-    >
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Search cakes, cupcakes, bread..."
+            >
 
-    <label for="categoryFilter">Filter by Category:</label>
+            <label for="categoryFilter">Filter by Category:</label>
 
-    <select id="categoryFilter">
-        <option value="all">All Products</option>
-        <option value="cakes">Cakes</option>
-        <option value="cupcakes">Cupcakes</option>
-        <option value="pastries">Pastries</option>
-        <option value="bread">Bread</option>
-    </select>
+            <select id="categoryFilter">
+                <option value="all">All Products</option>
+                <option value="cakes">Cakes</option>
+                <option value="cupcakes">Cupcakes</option>
+                <option value="pastries">Pastries</option>
+                <option value="bread">Bread</option>
+            </select>
 
-    <p id="productFeedback" role="status" aria-live="polite"></p>
+            <p id="productFeedback" role="status" aria-live="polite"></p>
 
-</section>   
-        
+        </section>
+
+        <!-- CAKES -->
         <section class="product-section">
+
             <h2>Cakes</h2>
 
-    <p class="section-description">
-            Beautiful cakes prepared for celebrations,
-            special occasions and everyday moments.
-        </p>
-     <div class="product-grid">
+            <p class="section-description">
+                Beautiful cakes prepared for celebrations,
+                special occasions and everyday moments.
+            </p>
 
-           <article class="product-card">
-                <div class="product-image">
+            <div class="product-grid">
 
-                    <img
-                        src="Cakes aesthetic.jpg"
-                        alt="Celebration cake">
+                <article class="product-card">
 
-             </div>
-             
+                    <div class="product-image">
+                        <img
+                            src="Cakes aesthetic.jpg"
+                            alt="Decorated celebration cake for special occasions">
+                    </div>
 
-    <div class="product-info">
+                    <div class="product-info">
 
-                <h3>Celebration Cakes</h3>
-                <p>
-                    Cakes suitable for birthdays, celebrations
-                    and other special occasions.
-                </p>
-         <a href="enquiry form.html">
-                 Enquire
-        </a>
-                </div>
-            </article>
+                        <h3>Celebration Cakes</h3>
 
-        <article class="product-card">
+                        <p>
+                            Cakes suitable for birthdays, celebrations
+                            and other special occasions.
+                        </p>
 
-                <div class="product-image">
+                        <a href="enquiry form.html">Enquire</a>
 
-                    <img
-                        src="cake.jpg"
-                        alt="Custom cake">
-                </div>
-    
-        <div class="product-info">
+                    </div>
 
-                    <h3>Custom Cakes</h3>
+                </article>
 
-                    <p>
-                        Custom cake enquiries are available for
-                        customers looking for something special.
-                    </p>
+                <article class="product-card">
 
-                    <a href="enquiry form.html">
-                        Enquire
-                    </a>
+                    <div class="product-image">
+                        <img
+                            src="cake.jpg"
+                            alt="Custom decorated cake">
+                    </div>
 
-                </div>
+                    <div class="product-info">
 
-            </article>
+                        <h3>Custom Cakes</h3>
 
-            <article class="product-card">
-                <div class="product-image">
+                        <p>
+                            Custom cake enquiries are available for
+                            customers looking for something special.
+                        </p>
 
-                    <img
-                        src="Aesthetic.jpg"
-                        alt="Decorated cake">
-                </div>
+                        <a href="enquiry form.html">Enquire</a>
 
-        <div class="product-info">
+                    </div>
 
-                <h3>Decorated Cakes</h3>
-                <p>
-                Beautifully decorated cakes made to add
-                something special to your celebration.
-                </p>
+                </article>
 
-                <a href="enquiry form.html">
-                        Enquire
-                    </a>
+                <article class="product-card">
 
-                </div>
-            </article>
+                    <div class="product-image">
+                        <img
+                            src="Aesthetic.jpg"
+                            alt="Beautifully decorated cake">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Decorated Cakes</h3>
+
+                        <p>
+                            Beautifully decorated cakes made to add
+                            something special to your celebration.
+                        </p>
+
+                        <a href="enquiry form.html">Enquire</a>
+
+                    </div>
+
+                </article>
+
             </div>
+
         </section>
+
+        <!-- CUPCAKES -->
         <section class="product-section">
+
             <h2>Cupcakes</h2>
 
-        <p class="section-description">
-            Fresh cupcakes available in delicious flavours
-            for celebrations and everyday treats.
-        </p>
-        <div class="product-grid">   
+            <p class="section-description">
+                Fresh cupcakes available in delicious flavours
+                for celebrations and everyday treats.
+            </p>
 
-            <article class="product-card">
+            <div class="product-grid">
 
-                <div class="product-image">
+                <article class="product-card">
 
-                    <img
-                        src="Vanilla.jpg"
-                        alt="Vanilla cupcakes">
+                    <div class="product-image">
+                        <img
+                            src="Vanilla.jpg"
+                            alt="Freshly baked vanilla cupcakes">
+                    </div>
 
-                </div>
+                    <div class="product-info">
 
+                        <h3>Vanilla Cupcakes</h3>
 
-                <div class="product-info">
+                        <p>
+                            Soft and delicious vanilla cupcakes
+                            perfect for any occasion.
+                        </p>
 
-                    <h3>Vanilla Cupcakes</h3>
-                    <p>
-                        Soft and delicious vanilla cupcakes
-                        perfect for any occasion.
-                    </p>
+                        <a href="enquiry form.html">Enquire</a>
 
-                    <a href="enquiry form.html">
-                        Enquire
-                    </a>
-                </div>
-            </article>
+                    </div>
 
-    <article class="product-card">
+                </article>
 
-                <div class="product-image">
+                <article class="product-card">
 
-                    <img
-                        src="Cupcakes.jpg"
-                        alt="Fresh cupcakes">
-                </div>
+                    <div class="product-image">
+                        <img
+                            src="Cupcakes.jpg"
+                            alt="Selection of freshly baked cupcakes">
+                    </div>
 
-                <div class="product-info">
+                    <div class="product-info">
 
-                    <h3>Fresh Cupcakes</h3>
+                        <h3>Fresh Cupcakes</h3>
 
-                    <p>
-                        Freshly baked cupcakes suitable for
-                        parties, celebrations and everyday treats.
-                    </p>
+                        <p>
+                            Freshly baked cupcakes suitable for
+                            parties, celebrations and everyday treats.
+                        </p>
 
-                    <a href="enquiry form.html">
-                        Enquire
-                    </a>
-                </div>
-            </article>
-     <article class="product-card">
+                        <a href="enquiry form.html">Enquire</a>
 
-                <div class="product-image">
+                    </div>
 
-                    <img
-                        src="chocolate.jpg"
-                        alt="Chocolate cupcakes">
+                </article>
 
-                </div>
+                <article class="product-card">
 
-                <div class="product-info">
+                    <div class="product-image">
+                        <img
+                            src="chocolate.jpg"
+                            alt="Freshly baked chocolate cupcakes">
+                    </div>
 
-                    <h3>Chocolate Cupcakes</h3>
+                    <div class="product-info">
 
-                    <p>
-                        Rich chocolate cupcakes made for
-                        chocolate lovers.
-                    </p>
+                        <h3>Chocolate Cupcakes</h3>
 
-                    <a href="enquiry form.html">
-                        Enquire
-                    </a>
-                </div>
-            </article>
-        </div>
+                        <p>
+                            Rich chocolate cupcakes made for
+                            chocolate lovers.
+                        </p>
 
-    </section>
-        
-        <section class="product-section">
-            <h2>Pastries</h2>
-                <p class="section-description">
-                    A selection of freshly baked pastries
-                    prepared for customers.
-                </p>
+                        <a href="enquiry form.html">Enquire</a>
 
-<div class="product-grid">
-     <article class="product-card">
-               <div class="product-image"> 
-                <img 
-                src="croissants.jpg" 
-                alt="Fresh croissants" > 
-            </div> 
-            <div class="product-info">
-                 <h3>Croissants</h3> 
-                 <p> 
-                    Freshly baked croissants with a golden, flaky texture. 
-                </p> 
-                <a href="enquiry form.html"> 
-                    Enquire 
+                    </div>
 
-               </a> 
-            </div> 
-        </article>
+                </article>
 
-<article class="product-card"> 
-    <div class="product-image"> 
-        <img 
-        src="macaroons.jpg" 
-        alt="Macaroons" > 
-    </div> 
-    
-    <div class="product-info"> 
-        <h3>Macaroons</h3> 
-        <p> 
-            Delicious sweet macaroons made for celebrations and special treats.
-         </p> 
-            <a href="enquiry form.html"> 
-                Enquire 
-            </a> 
-            </div> 
-</article>
-
-<article class="product-card">
-     <div class="product-image">
-         <img 
-         src="doughnuts.jpg" 
-         alt="Fresh doughnuts" > 
-        </div> 
-        <div class="product-info"> 
-            <h3>Doughnuts</h3>
-             <p> 
-                Freshly baked doughnuts perfect for everyday treats and special occasions. 
-            </p> 
-            <a href="enquiry form.html"> 
-                Enquire </a> 
             </div>
-         </article> 
-        </div> 
-</section>
 
-
-
-       <section class="product-section">
-            <h2>Bread</h2>
-             <p class="section-description">
-                    Fresh bread prepared for local customers.
-                </p>
-          <div class="product-grid">
-<article class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="Croissant Bakery.jpg"
-                        alt="Fresh croissant">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>Croissants</h3>
-
-                    <p>
-                        Freshly baked croissants with a golden,
-                        flaky texture.
-                    </p>
-
-                    <a href="enquiry form.html">
-                        Enquire
-                    </a>
-                </div>
-            </article>
-
-        <article class="product-card">
-                <div class="product-image">
-
-                    <img
-                        src="Pretzels.jpg"
-                        alt="Fresh pretzels">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>Pretzels</h3>
-
-                    <p>
-                        Delicious freshly baked pretzels
-                        prepared for bakery lovers.
-                    </p>
-
-                    <a href="enquiry form.html">
-                        Enquire
-                    </a>
-                </div>
-            </article>
-
-           <article class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="Bread .jpg"
-                        alt="Freshly baked bread">
-
-                </div>
-                <div class="product-info">
-
-                    <h3>Freshly Baked Bread</h3>
-
-                    <p>
-                        Fresh bread prepared for local
-                        customers.
-                    </p>
-
-                    <a href="enquiry form.html">
-                        Enquire
-                    </a>
-                </div>
-            </article>
-
-
-        </div>            
         </section>
 
-          <section class="order-section">
+        <!-- PASTRIES -->
+        <section class="product-section">
+
+            <h2>Pastries</h2>
+
+            <p class="section-description">
+                A selection of freshly baked pastries
+                prepared for customers.
+            </p>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="croissants.jpg"
+                            alt="Freshly baked golden croissants">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Croissants</h3>
+
+                        <p>
+                            Freshly baked croissants with a golden,
+                            flaky texture.
+                        </p>
+
+                        <a href="enquiry form.html">Enquire</a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="macaroons.jpg"
+                            alt="Sweet macaroons">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Macaroons</h3>
+
+                        <p>
+                            Delicious sweet macaroons made for
+                            celebrations and special treats.
+                        </p>
+
+                        <a href="enquiry form.html">Enquire</a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="doughnuts.jpg"
+                            alt="Freshly baked doughnuts">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Doughnuts</h3>
+
+                        <p>
+                            Freshly baked doughnuts perfect for
+                            everyday treats and special occasions.
+                        </p>
+
+                        <a href="enquiry form.html">Enquire</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- BREAD -->
+        <section class="product-section">
+
+            <h2>Bread</h2>
+
+            <p class="section-description">
+                Fresh bread prepared for local customers.
+            </p>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Pretzels.jpg"
+                            alt="Freshly baked pretzels">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Pretzels</h3>
+
+                        <p>
+                            Delicious freshly baked pretzels
+                            prepared for bakery lovers.
+                        </p>
+
+                        <a href="enquiry form.html">Enquire</a>
+
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Bread .jpg"
+                            alt="Freshly baked bread">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Freshly Baked Bread</h3>
+
+                        <p>
+                            Fresh bread prepared for local
+                            customers.
+                        </p>
+
+                        <a href="enquiry form.html">Enquire</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ORDER SECTION -->
+        <section class="order-section">
+
             <h2>Want to Place an Order?</h2>
 
             <p>
@@ -381,14 +402,17 @@
 
             <a href="enquiry form.html">
                 Make an Enquiry
-
             </a>
+
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p><center> 2026 Home Baked. All Rights Reserved.</center></p>
+
+        <p>2026 Home Baked. All Rights Reserved.</p>
+
     </footer>
 
 </body>
